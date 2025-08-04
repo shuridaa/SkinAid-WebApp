@@ -1,0 +1,35 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to SkinAid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="SkinAid Logo" width="140px" style="margin-bottom: 20px;">
+        <h1>Welcome to <span style="color:#d94f6d;">SkinAid</span></h1>
+        <h2>Your personal assistant for early skin disease detection!</h2>
+        <a href="{{ url_for('upload') }}">
+            <button>Upload Image</button>
+        </a>
+    </div>
+
+    <div class="info-box combined">
+        <img src="{{ url_for('static', filename='how_works.jpg') }}" alt="How SkinAid Works" class="info-img">
+        
+        <div class="info-text">
+            <h2>🔍 How SkinAid Works</h2>
+            <ul>
+                <li>📸 Upload a clear photo of your skin lesion or affected area.</li>
+                <li>🤖 Our AI analyzes the image using deep learning.</li>
+                <li>📊 You get a predicted disease class with confidence score.</li>
+                <li>⚠️ <strong>Not a medical diagnosis</strong> – for early insights only!</li>
+            </ul>
+        </div>
+    </div>
+    
+
+</body>
+</html>

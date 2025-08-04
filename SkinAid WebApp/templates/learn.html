@@ -1,0 +1,70 @@
+<!-- templates/learn.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn More – SkinAid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1> Learn More About Skin Conditions</h1>
+        <p>This page offers helpful information on the skin diseases SkinAid may detect. Always consult a healthcare professional for any medical concerns.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Actinic Keratoses </h2>
+        <p><strong>What is it?</strong> A rough, scaly patch caused by long-term sun exposure. These are precancerous and can develop into squamous cell carcinoma.</p>
+        <p><strong>Why it happens:</strong> Long-term UV damage from sunlight or tanning beds.</p>
+        <p><strong>What you can do:</strong> Use sunscreen, avoid direct sun, and see a dermatologist if it persists.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Basal Cell Carcinoma </h2>
+        <p><strong>What is it?</strong> A slow-growing skin cancer that looks like a pearly or waxy bump. Usually treatable.</p>
+        <p><strong>Why it happens:</strong> DNA damage from UV exposure over time.</p>
+        <p><strong>What you can do:</strong> Get it checked early. May require minor surgery. Use sunscreen regularly.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Benign Keratosis </h2>
+        <p><strong>What is it?</strong> Non-cancerous skin growths like age spots or seborrheic keratosis.</p>
+        <p><strong>Why it happens:</strong> Age, sun exposure, and genetics.</p>
+        <p><strong>What you can do:</strong> Usually harmless. Monitor for changes. Can be removed cosmetically.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Dermatofibroma </h2>
+        <p><strong>What is it?</strong> A small, firm bump that may follow a minor skin injury. Typically harmless.</p>
+        <p><strong>Why it happens:</strong> Often develops after insect bites or shaving cuts.</p>
+        <p><strong>What you can do:</strong> No treatment usually needed. Remove if painful or bothersome.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Melanoma </h2>
+        <p><strong>What is it?</strong> A dangerous form of skin cancer. Early detection is critical.</p>
+        <p><strong>Why it happens:</strong> UV damage and genetic factors cause skin cell mutation.</p>
+        <p><strong>What you can do:</strong> Check moles for asymmetry, border, color changes, and size. See a specialist immediately.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Melanocytic Nevus </h2>
+        <p><strong>What is it?</strong> Common moles. Typically harmless unless they change.</p>
+        <p><strong>Why it happens:</strong> Caused by clusters of pigment cells; influenced by genetics and sun exposure.</p>
+        <p><strong>What you can do:</strong> Monitor for size, shape, or color changes. Regular skin checks are recommended.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>🔹 Vascular Lesion </h2>
+        <p><strong>What is it?</strong> Includes angiomas or hemangiomas – overgrowths of blood vessels under the skin.</p>
+        <p><strong>Why it happens:</strong> Often present from birth or develops with age.</p>
+        <p><strong>What you can do:</strong> Usually harmless. Can be removed if bothersome. Monitor for bleeding or rapid growth.</p>
+    </div>
+
+    <div style="text-align: center; margin: 30px;">
+        <a href="{{ url_for('upload') }}">
+            <button class="learn-btn">🔙 Back to Upload</button>
+        </a>
+    </div>
+</body>
+</html>
